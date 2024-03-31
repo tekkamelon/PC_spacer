@@ -1,31 +1,38 @@
 module base(){
 
-	cube([207, 170, 10]);
+	cube([200, 170, 10]);
 
-	translate([5, 0, -15]){
-
-		cube([10, 170, 25]);
-
-	}
-
-	translate([207-15, 0, -15]){
+	translate([0, 0, -15]){
 
 		cube([10, 170, 25]);
 
 	}
 
-	translate([0, 0, -20]){
+	translate([200-10, 0, -15]){
 
-		cube([5, 170, 20]);
-
-	}
-
-	translate([207-5, 0, -20]){
-
-		cube([5, 170, 20]);
+		cube([10, 170, 25]);
 
 	}
 
 }
 
-base();
+module hole(){
+
+	for(i=[15:20:180], j=[20:20:150]){
+
+		translate([i, j, -10]){
+
+			cube([10, 10, 30]);
+
+		}
+
+	}
+
+}
+
+difference(){
+
+	base();
+	hole();
+
+}
