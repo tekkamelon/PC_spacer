@@ -6,7 +6,7 @@ module base(){
 	// 脚部
 	for(i=[0, 190]){
 
-		translate([i, 0, -20]){
+		translate([i, 0, -15]){
 
 			cube([10, 170, 25]);
 
