@@ -12,5 +12,5 @@ module model() {
 // パーツ同士を減算
 difference(){
 	model();
-	cylinder(d=12.6, h=50);
+	cylinder(d=13, h=50);
 }
