@@ -2,8 +2,8 @@
 $fn=100;
 module model() {
 	hull() {
-		cylinder(d=165, h=10);
-		translate([0, 0, 30]){
+		cylinder(d=150, h=10);
+		translate([0, 0, 25]){
 			cylinder(d=50, h=10);
 		}
 	}
